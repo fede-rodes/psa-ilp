@@ -1,2 +1,8 @@
-# psa-ilp
-Projective Splitting Algorithms for Integer Linear Programming
+# About PSA-ilp
+
+PSA-ilp is an Integer Linear Programming (ILP) solver based on Projective Splitting Algorithms (PSA's). Unlike classical methods for solving ILP problems, PSA's conduct the search for the optimal solution by generating candidate solutions tailored to specific values of the objective function. As a consequence of this approach, the number of variables in the original problem is systematically reduced without adding any additional constraint to the initial formulation. Computational experiment performed on large instances of the 0-1 Multidimensional Knapsack Problem reveal that PSA's outperform state-of-the-art ILP solvers in both running time and memory requirements.
+
+PSA-ilp is implemented in C++ and can be used through an interactive command-line interface, reading LP format files, as well as embedded into other programs via a C++ class library. Similarly to other ILP solvers, PSA-ilp involve the solution of a large number of Linear Programming (LP) problems as a subroutine. For this reason, PSA-ilp has been linked/interfaced with a range of open source and academic LP solvers to perform said task.
+
+All versions of the PSA-ilp are supported with demos and detailed documentation. PSA-ilp is free for academic research and can be licensed for commercial use.
+
